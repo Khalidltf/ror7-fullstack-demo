@@ -12,7 +12,7 @@ Post.destroy_all
 
 puts "Creating Posts"
 10.times do |i|
-  Post.create!(title: "first #{i + 1}", body: "kdhfhfkahsdkfhak #{i + 1}")
+  Post.create!(title: "first #{i + 1}", body: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum illo voluptates officia animi rem aliquam earum repellat? Sed nemo asperiores velit doloribus praesentium nihil atque illo aliquam fugiat facere. #{i + 1}")
 end
 
 puts "Done !"
