@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
