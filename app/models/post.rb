@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  validates :title, presence: true, length: { minimum: 5, maximum: 9 }
+  validates :title, presence: true, length: { minimum: 5, maximum: 90 }
   belongs_to :user
 end
