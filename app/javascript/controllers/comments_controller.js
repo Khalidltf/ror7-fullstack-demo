@@ -4,7 +4,10 @@ export default class extends Controller {
   initialize() {}
   connect() {}
 
-  toggleForm() {
-    console.log("I clicked the edit button");
+  toggleForm(event) {
+    console.log("toggleForm");
+    event.preventDefault();
+    event.stopPropagation();
+
   }
 }
