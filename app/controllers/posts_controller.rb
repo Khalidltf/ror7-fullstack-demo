@@ -12,9 +12,9 @@ class PostsController < ApplicationController
     views = @post.views + 1
     @post.views = views
     @post.save
-    # @post.update(views: @post.views + 1)
-
     @comments = @post.comments.order(created_at: :desc)
+    # @post.update(views: @post.views + 1) //
+
   end
 
   # GET /posts/new
