@@ -6,8 +6,9 @@
     <span> Posted <%= time_ago_in_words(comment.created_at)%> ago</span>
   <% end %>
   <% if current_user == comment.user %>
-    <div class="button-group float-end">
-      <%= button_to "delete", [post, comment], class: "btn btn-danger", method: :delete %>
+    <div class="btn-group float-end">
+      <%= link_to "Edit", nil, remote: :true, class: "btn btn-warning" %>
+      <%= button_to "delete", [post, comment], class: "btn btn-danger mx-2", method: :delete %>
     </div>
   <% end %>
   <br />
