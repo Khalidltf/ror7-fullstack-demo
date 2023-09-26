@@ -73,3 +73,5 @@ end
 
 # Flexible authentication solution for Rails with Warden
 gem 'devise'
+
+gem "noticed", "~> 1.6"
