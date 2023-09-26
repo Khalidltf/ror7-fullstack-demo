@@ -3,6 +3,8 @@ class Comment < ApplicationRecord
   belongs_to :user
   has_rich_text :body
 
+  validates :body, presence: true, length: { minimum: 15, maximum: 1000 }
+
   after_create_commit :notify_recipient
   before_destroy :cleanup_notifications
   has_noticed_notifications model_name: 'Notification'
