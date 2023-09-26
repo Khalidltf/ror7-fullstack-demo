@@ -1,0 +1,9 @@
+<% if current_user %>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="badge rounded-pill bg-danger">
+        <%= @unread.count >= 11 ? "11+" : @unread.count %> <i class="bi bi-tsunami"></i>
+      </span>
+    </a>
+  </li>
+<% end %>
