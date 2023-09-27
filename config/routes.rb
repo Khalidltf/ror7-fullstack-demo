@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'search', to: 'search#index'
   # get 'users/profile'
 
   devise_for :users, controllers: {
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  
+
   get 'a', to: 'pages#about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
